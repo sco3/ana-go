@@ -2,8 +2,8 @@ package ana
 
 import "fmt"
 
-func GetAnagrams(given []string) []string {
-	result := []string{}
+func GetAnagrams(given []string) [][]string {
+	result := [][]string{}
 	ana_key_map := BuildMap(given)
 
 	fmt.Printf("Map: %v\n", ana_key_map)
@@ -12,7 +12,7 @@ func GetAnagrams(given []string) []string {
 		fmt.Printf("%v %v\n", i, words)
 
 		if len(words) > 1 {
-			result = append(result, words...)
+			result = append(result, words)
 		}
 
 	}

@@ -41,9 +41,11 @@ A clean, idiomatic Go implementation for finding and grouping anagrams from a sl
 ## Example Output
 
 ```text
+
 Given [asdf jkl fdsa abc cab]
 Map: map[abc:[abc cab] adfs:[asdf fdsa] jkl:[jkl]]
-abc [abc cab]
 adfs [asdf fdsa]
 jkl [jkl]
-Result [abc cab asdf fdsa]
+abc [abc cab]
+Result [[asdf fdsa] [abc cab]]
+```
