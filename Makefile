@@ -1,4 +1,4 @@
-APP_NAME := pal-go
+APP_NAME := ana-go
 VERSION  := $(shell git describe --tags --always --dirty 2>/dev/null || echo "dev")
 
 .DEFAULT_GOAL := help
