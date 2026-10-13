@@ -1,0 +1,49 @@
+# Anagram Finder in Go
+
+A clean, idiomatic Go implementation for finding and grouping anagrams from a slice of strings, built as a modular application demonstrating clean code practices, maps, and standard library slices.
+
+## Project Structure
+
+```text
+.
+├── go.mod
+├── main.go
+└── ana/
+    ├── build_map.go
+    ├── get_anagrams.go
+    └── get_sorted.go
+```
+
+## Features
+
+- **Modular Design:** Divided into a core application entry point (`main.go`) and a domain logic package (`ana`).
+- **Modern Go Standards:** Uses the modern `slices.Sort` function (introduced in Go 1.21) for efficient rune-based string sorting.
+- **Efficient Grouping:** Groups anagrams using hash maps (`map[string][]string`) with single-pass lookups.
+
+## Getting Started
+
+### Prerequisites
+
+- Go 1.21 or higher installed on your machine.
+
+### Running the Project
+
+1. Initialize the module (if not already done):
+   ```bash
+   go mod init ana-go/v2
+   ```
+
+2. Run the program:
+   ```bash
+   go run main.go
+   ```
+
+## Example Output
+
+```text
+Given [asdf jkl fdsa abc cab]
+Map: map[abc:[abc cab] adfs:[asdf fdsa] jkl:[jkl]]
+abc [abc cab]
+adfs [asdf fdsa]
+jkl [jkl]
+Result [abc cab asdf fdsa]
