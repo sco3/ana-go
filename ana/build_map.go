@@ -1,13 +1,10 @@
 package ana
 
-func Build_map(given []string) map[string][]rune {
-	result := make(map[string][]rune, len(given))
+func BuildMap(given []string) map[string][]string {
+	result := make(map[string][]string)
 	for _, s := range given {
-		word := []rune(s)
-		result[s] = word
-
+		key := GetSorted(s)
+		result[key] = append(result[key], s)
 	}
-
 	return result
-
 }

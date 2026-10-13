@@ -2,11 +2,19 @@ package ana
 
 import "fmt"
 
-func Get_anagrams(given []string) []string {
-	ana_key_map := Build_map(given)
+func GetAnagrams(given []string) []string {
+	result := []string{}
+	ana_key_map := BuildMap(given)
 
 	fmt.Printf("Map: %v\n", ana_key_map)
 
-	r := given //[]string{}
-	return r
+	for i, words := range ana_key_map {
+		fmt.Printf("%v %v\n", i, words)
+
+		if len(words) > 1 {
+			result = append(result, words...)
+		}
+
+	}
+	return result
 }

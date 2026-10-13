@@ -6,10 +6,12 @@ import (
 )
 
 func main() {
-	given := []string{"asdf", "jkl"}
+	given := []string{"asdf", "jkl", "fdsa", "abc", "cab"}
 
-	anas := ana.Get_anagrams(given)
+	fmt.Printf("Given %v\n", given)
 
-	fmt.Printf("hi %v\n", anas)
+	anas := ana.GetAnagrams(given)
+
+	fmt.Printf("Result %v\n", anas)
 
 }
