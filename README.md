@@ -29,6 +29,7 @@ A clean, idiomatic Go implementation for finding and grouping anagrams from a sl
 ### Running the Project
 
 1. Initialize the module (if not already done):
+
    ```bash
    go mod init ana-go/v2
    ```
