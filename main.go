@@ -8,8 +8,8 @@ import (
 func main() {
 	given := []string{"asdf", "jkl"}
 
-	pals := ana.Get_anagrams(given)
+	anas := ana.Get_anagrams(given)
 
-	fmt.Printf("hi %v\n", pals)
+	fmt.Printf("hi %v\n", anas)
 
 }
